@@ -1,6 +1,4 @@
 import UIKit
-import SnapKit
-import AsyncHTTPClient
 
 class ViewController: UIViewController {
 
@@ -10,5 +8,8 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .red
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        DataServiceManager.shared.searchRelatedMusics(page: 0, limit: 30, keyword: "周杰伦", channel: .KuWo)
+    }
 }
 

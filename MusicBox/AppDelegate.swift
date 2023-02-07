@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  MusicBox
-//
-//  Created by didi on 2/6/23.
-//
-
 import UIKit
 
 @main
